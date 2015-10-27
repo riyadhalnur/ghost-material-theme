@@ -1,0 +1,25 @@
+{{#foreach posts}}
+<div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__media mdl-color-text--grey-50">
+    <h3>
+      <a href="{{url}}">{{title}}</a>
+    </h3>
+  </div>
+  <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+    {{excerpt words="30"}}
+  </div>
+  <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+    <div class="minilogo">
+      {{#if author.image}}
+        <img src="{{author.image}}" alt="{{author}}" class="post_avatar" alt="{{author}}"/>
+      {{else}}
+        <img src="{{asset "img/avatar.png"}}" class="post_avatar" />
+      {{/if}}
+    </div>
+    <div>
+      <strong>{{author}}</strong>
+      <span><time datetime="{{date format="DD-MM-YYYY"}}">{{date published_at timeago="true"}}</time></span>
+    </div>
+  </div>
+</div>
+{{/foreach}}
