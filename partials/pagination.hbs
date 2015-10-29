@@ -1,0 +1,29 @@
+{{!-- This file is reponsible for outputting the pagination links --}}
+
+<nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+  {{#if prev}}
+  <a href="{{page_url prev}}" class="material-nav__button">
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+      <i class="material-icons">arrow_back</i>
+      <span class="mdl-button__ripple-container">
+        <span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(14px, 19px);"></span>
+      </span>
+    </button>
+    Newer
+  </a>
+  {{/if}}
+
+  <div class="section-spacer"></div>
+
+  {{#if next}}
+  <a href="{{page_url next}}" class="material-nav__button">
+    Older
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+      <i class="material-icons">arrow_forward</i>
+      <span class="mdl-button__ripple-container">
+        <span class="mdl-ripple"></span>
+      </span>
+    </button>
+  </a>
+  {{/if}}
+</nav>

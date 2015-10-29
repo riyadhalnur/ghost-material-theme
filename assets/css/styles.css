@@ -1,5 +1,5 @@
 body::before {
-  background-image: url('images/bg.jpg');
+  background-color: rgb(63,81,181);
   background-size: cover;
   background-attachment: fixed;
   content: '';
@@ -31,7 +31,7 @@ body .material {
 }
 
 .material.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 50px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -80,6 +80,7 @@ body .material {
   -ms-flex-align: end;
   align-items: flex-end;
   cursor: pointer;
+  height: 350px;
 }
 .material .mdl-card__media a,
 .material .mdl-card__title a {
@@ -546,4 +547,24 @@ body .material {
   font-size: 18px;
   color: red;
   vertical-align: text-bottom;
+}
+
+.header-card {
+  min-height: 256px !important;
+  min-width: 256px;
+}
+
+.logo-card {
+  min-height: 200px !important;
+  max-width: 200px;
+  border-radius: 100px;
+}
+.logo-card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.logo-card-image img{
+  width: 200px;
+  height: 200px;
 }

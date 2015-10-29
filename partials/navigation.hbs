@@ -1,0 +1,19 @@
+{{!-- This file is reponsible for outputting the header bar with links to
+      pages defined in settings --}}
+
+<div class="mdl-layout__drawer">
+  <div class="mdl-card mdl-cell mdl-cell--12-col logo-card mdl-shadow--2dp">
+    <div class="logo-card-image">
+      <img src="{{@blog.logo}}" />
+    </div>
+  </div>
+  <span class="mdl-layout-title mdl-typography--title">{{@blog.title}}</span>
+
+  {{#if @blog.navigation}}
+  <nav class="mdl-navigation">
+    {{#foreach navigation}}
+    <a class="mdl-navigation__link" href="">{{label}}</a>
+    {{/foreach}}
+  </nav>
+  {{/if}}
+</div>

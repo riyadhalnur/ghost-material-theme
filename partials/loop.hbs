@@ -1,17 +1,17 @@
 {{#foreach posts}}
-<div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__media mdl-color-text--grey-50">
+<div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+  <div class="mdl-card__media mdl-color-text--grey-50" style="background: rgb(255,82,82) url('{{image absolute="true"}}') center / cover">
     <h3>
       <a href="{{url}}">{{title}}</a>
     </h3>
   </div>
   <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-    {{excerpt words="30"}}
+    {{excerpt words="60"}}
   </div>
   <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
     <div class="minilogo">
       {{#if author.image}}
-        <img src="{{author.image}}" alt="{{author}}" class="post_avatar" alt="{{author}}"/>
+        <img src="{{author.image}}" alt="Author avatar" class="post_avatar" />
       {{else}}
         <img src="{{asset "img/avatar.png"}}" class="post_avatar" />
       {{/if}}
