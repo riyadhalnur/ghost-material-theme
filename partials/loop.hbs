@@ -28,8 +28,8 @@
     </button>
 
     <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="share-btn-{{title}}" style="z-index: 9999">
-      <li class="mdl-menu__item"><a href="https://twitter.com/intent/tweet?text={{title}} {{url absolute="true"}}">Share on Twitter</a></li>
-      <li class="mdl-menu__item"><a href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}">Share on Facebook</a></li>
+      <li class="mdl-menu__item"><a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Share on Twitter</a></li>
+      <li class="mdl-menu__item"><a href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Share on Facebook</a></li>
       <li class="mdl-menu__item"><a href="mailto:?subject={{title}}">Email link</a></li>
     </ul>
   </div>
