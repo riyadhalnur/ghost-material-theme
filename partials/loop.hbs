@@ -20,6 +20,18 @@
       <strong>{{author}}</strong>
       <span><time datetime="{{date format="DD-MM-YYYY"}}">{{date published_at timeago="true"}}</time></span>
     </div>
+
+    {{! share button menu }}
+    <div class="mdl-layout-spacer"></div>
+    <button id="share-btn-{{title}}" class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">share</i>
+    </button>
+
+    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="share-btn-{{title}}" style="z-index: 9999">
+      <li class="mdl-menu__item"><a href="https://twitter.com/intent/tweet?text={{title}} {{url absolute="true"}}">Share on Twitter</a></li>
+      <li class="mdl-menu__item"><a href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}">Share on Facebook</a></li>
+      <li class="mdl-menu__item"><a href="mailto:?subject={{title}}">Email link</a></li>
+    </ul>
   </div>
 </div>
 {{/foreach}}

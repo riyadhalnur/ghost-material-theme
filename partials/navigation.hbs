@@ -2,18 +2,20 @@
       pages defined in settings --}}
 
 <div class="mdl-layout__drawer">
-  <div class="mdl-card mdl-cell mdl-cell--12-col logo-card mdl-shadow--2dp">
-    <div class="logo-card-image">
-      <img src="{{@blog.logo}}" />
-    </div>
-  </div>
-  <span class="mdl-layout-title mdl-typography--title">{{@blog.title}}</span>
+  <header class="nav-header">
+      <img class="logo-image mdl-shadow--2dp" src="{{@blog.logo}}" />
+      <div class="logo-image-text mdl-color-text--blue-grey-50">
+        <span class="mdl-typography--title">{{@blog.title}}</span>
+      </div>
+  </header>
 
-  {{#if @blog.navigation}}
   <nav class="mdl-navigation">
-    {{#foreach navigation}}
-    <a class="mdl-navigation__link" href="">{{label}}</a>
-    {{/foreach}}
+    <span class="nav-about">{{@blog.description}}</span>
+    <div class="mdl-layout-spacer"></div>
+    {{#if @blog.navigation}}
+      {{#foreach navigation}}
+      <a class="mdl-navigation__link" href="">{{label}}</a>
+      {{/foreach}}
+    {{/if}}
   </nav>
-  {{/if}}
 </div>
