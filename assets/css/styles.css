@@ -94,10 +94,6 @@ a {
   width: 100%;
   padding: 16px;
   min-height: 64px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 .material .mdl-card__supporting-text strong {
   font-weight: 400;
