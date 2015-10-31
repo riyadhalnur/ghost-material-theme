@@ -462,13 +462,16 @@ a {
   border-radius: 2px;
 }
 .social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+  background-image: url('../images/twitter.png');
 }
-.social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+.social-btn__linkedin {
+  background-image: url('../images/linkedin.png');
 }
-.social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+.social-btn__github {
+  background-image: url('../images/github-circle.png');
+}
+.social-btn__facebook {
+  background-image: url('../images/facebook.png');
 }
 
 .material .mdl-mini-footer {
