@@ -98,10 +98,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 .material .mdl-card__supporting-text strong {
   font-weight: 400;
@@ -189,58 +185,6 @@ a {
   -ms-flex-order: -1;
   order: -1;
 }
-.material .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
-}
-.material .something-else .mdl-card__media {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.material .something-else > button {
-  position: absolute;
-  top: 0;
-  right: 28px;
-  -webkit-transform: translate(0px, -28px);
-  -ms-transform: translate(0px, -28px);
-  transform: translate(0px, -28px);
-}
-.material .something-else .mdl-card__media {
-  font-size: 13px;
-  font-weight: 500;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-.material .something-else .mdl-card__media img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.material .something-else .mdl-card__supporting-text {
-  background-color: #F5F5F5;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-.material .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.jpg');
-}
-.material .shopping .mdl-card__media {
-  background-image: url('images/shopping.jpg');
-}
 .material .material__posts > .material-nav {
   margin: 12px 15px;
   display: -webkit-box;
@@ -303,17 +247,10 @@ a {
   background-color: transparent;
 }
 .material--blogpost .material__posts > .mdl-card .mdl-card__media {
-  background-image: url('images/road_big.jpg');
   height: 280px;
 }
 .material--blogpost .comments {
   background-color: #EEE;
-}
-.material--blogpost .meta > * {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .material--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
@@ -328,7 +265,6 @@ a {
           flex-direction: column;
 }
 .material--blogpost .meta + .mdl-card__supporting-text p {
-  max-width: 512px;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
@@ -471,8 +407,7 @@ a {
   padding-left: 48px;
 }
 
-.material--blogpost .demo-back {
-  position: absolute;
+.material--blogpost .post-back {
   top: 16px;
   left: 16px;
   color: white;
@@ -576,7 +511,7 @@ a {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 16px;
+  padding: 10px;
   height: 160px;
   background: rgb(255,82,82) url('../images/menu_bg1.jpg');
   background-position: center;
@@ -605,7 +540,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .nav-about {
