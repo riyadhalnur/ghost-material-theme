@@ -45,10 +45,18 @@
 <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
 
-<p>Clone this repository into the <em>themes</em> folder of your Ghost Installation<br>
-<code>git clone https://github.com/riyadhalnur/ghost-material-theme</code>  </p>
+<ul>
+<li><p>Clone this repository into the <em>themes</em> folder of your Ghost Installation<br>
+<code>git clone https://github.com/riyadhalnur/ghost-material-theme</code>  </p></li>
+<li><p>Navigate to the <em>General</em> page under <em>Settings</em> in your <em>ghost</em> dashboard and select <strong>Material</strong>.  </p></li>
+<li>
+<p>Use the <em>Code Injection</em> page to define the shortname in blog header for Disqus comments  </p>
 
-<p>Navigate to the <em>General</em> page under <em>Settings</em> in your <em>ghost</em> dashboard and select the <strong>Material Theme</strong>.  </p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>script<span class="pl-k">&gt;</span>
+<span class="pl-k">var</span> disqus_shortname <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>YOUR_DISQUS_SHORTCUT_HERE<span class="pl-pds">'</span></span>;
+<span class="pl-k">&lt;/</span>script<span class="pl-k">&gt;</span></pre></div>
+</li>
+</ul>
 
 <h3>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
