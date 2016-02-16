@@ -34,6 +34,10 @@ a {
   flex-shrink: 0;
 }
 
+.material.mdl-layout .mdl-layout__header {
+  background-color: #303F9F;
+}
+
 .material.mdl-layout .mdl-layout__content {
   padding-top: 50px;
   position: relative;
