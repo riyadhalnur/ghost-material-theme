@@ -38,6 +38,10 @@ a {
   background-color: #303F9F;
 }
 
+.material.mdl-layout .mdl-textfield__input {
+  border: 1px solid #fff;
+}
+
 .material.mdl-layout .mdl-layout__content {
   padding-top: 50px;
   position: relative;
