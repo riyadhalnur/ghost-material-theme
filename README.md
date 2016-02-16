@@ -1,7 +1,7 @@
 # Material
 > Blog theme for Ghost based on [Material Design Lite](http://www.getmdl.io) by Google.  
 
-![Theme screenshot](http://res.cloudinary.com/verticalaxisbd/image/upload/v1446292772/Test_blog_fitp4y.jpg)
+![Theme screenshot](http://res.cloudinary.com/verticalaxisbd/image/upload/v1455619549/Test_blog_jsmhoc.jpg)
 
 ### Demo  
 [http://blog.verticalaxisbd.com](http://blog.verticalaxisbd.com)  
@@ -18,6 +18,14 @@
   var disqus_shortname = 'YOUR_DISQUS_SHORTCUT_HERE';
   </script>
   ```
+
+- You can add search support to your blog using [Swifttype](https://swiftype.com/) by placing the code snippet in the footer using the *Code Injection* panel .
+
+### CHANGELOG  
+
+#### v1.0.1 / 2016-02-16  
+- Moved navigation bar to top. Waterfall navigation bar type.
+- Added support for Swifttype to power search.
 
 ### License  
 Licensed under MIT  
