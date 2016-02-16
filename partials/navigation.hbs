@@ -1,20 +1,37 @@
 {{!-- This file is reponsible for outputting the header bar with links to
       pages defined in settings --}}
 
-<div class="mdl-layout__drawer">
-  <header class="nav-header">
-      <img class="logo-image mdl-shadow--2dp" src="{{@blog.logo}}" />
-      <div class="logo-image-text mdl-color-text--blue-grey-50">
-        <span class="mdl-typography--title">{{@blog.title}}</span>
-      </div>
-  </header>
-
-  <nav class="mdl-navigation">
-    <span class="nav-about">{{@blog.description}}</span>
+<header class="mdl-layout__header mdl-layout__header--waterfall">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">{{@blog.title}}</span>
     <div class="mdl-layout-spacer"></div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+      <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+        <i class="material-icons">search</i>
+      </label>
+      <div class="mdl-textfield__expandable-holder">
+        <input class="mdl-textfield__input st-default-search-input" type="text" name="sample" id="waterfall-exp">
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-layout__header-row">
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      {{#if @blog.navigation}}
+        {{#foreach navigation}}
+        <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>
+        {{/foreach}}
+      {{/if}}
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">{{@blog.title}}</span>
+  <nav class="mdl-navigation">
     {{#if @blog.navigation}}
       {{#foreach navigation}}
-      <a class="mdl-navigation__link" href="">{{label}}</a>
+      <a class="mdl-navigation__link" href="{{url absolute="true"}}">{{label}}</a>
       {{/foreach}}
     {{/if}}
   </nav>
