@@ -1,4 +1,6 @@
 # Material
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/riyadhalnur/ghost-material-theme.svg)](https://greenkeeper.io/)
 > Blog theme for Ghost based on [Material Design Lite](http://www.getmdl.io) by Google.  
 
 ![Theme screenshot](https://res.cloudinary.com/verticalaxisbd/image/upload/v1455619549/Test_blog_jsmhoc.jpg)
